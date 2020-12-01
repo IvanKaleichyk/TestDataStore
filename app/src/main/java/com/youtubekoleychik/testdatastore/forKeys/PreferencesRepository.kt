@@ -7,7 +7,7 @@ import androidx.datastore.preferences.core.edit
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
-class PreferenciesRepository(context : Context) {
+class PreferencesRepository(context : Context) {
 
     private val dataStore = context.createDataStore("SOME_NAME")
 
