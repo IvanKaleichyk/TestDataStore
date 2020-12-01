@@ -1,13 +1,13 @@
-package com.youtubekoleychik.testdatastore
+package com.youtubekoleychik.testdatastore.forKeys
 
 import android.content.Context
-import android.os.Parcelable
-import android.preference.Preference
 import androidx.datastore.preferences.*
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.core.edit
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
-class Repository(context : Context) {
+class PreferenciesRepository(context : Context) {
 
     private val dataStore = context.createDataStore("SOME_NAME")
 

@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestDataStore">
+        <activity android:name=".forKeys.PreferencesActivity"></activity>
+        <activity android:name=".forProtoBuffers.ProtocolBufferActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

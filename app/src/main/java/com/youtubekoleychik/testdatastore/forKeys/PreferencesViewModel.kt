@@ -1,16 +1,15 @@
-package com.youtubekoleychik.testdatastore
+package com.youtubekoleychik.testdatastore.forKeys
 
 import android.app.Application
-import androidx.datastore.preferences.Preferences
+import androidx.datastore.preferences.core.Preferences
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
-class MainViewModel(application: Application) : AndroidViewModel(application) {
+class PreferencesViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val repository = Repository(application.applicationContext)
+    private val repository = PreferenciesRepository(application.applicationContext)
 
     val age = repository.get(PreferencesKeys.age).asLiveData()
 
