@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 
 class PreferencesViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val repository = PreferenciesRepository(application.applicationContext)
+    private val repository = PreferencesRepository(application.applicationContext)
 
     val age = repository.get(PreferencesKeys.age).asLiveData()
 

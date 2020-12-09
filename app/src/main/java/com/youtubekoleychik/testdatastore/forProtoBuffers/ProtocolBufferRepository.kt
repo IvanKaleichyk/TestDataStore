@@ -18,7 +18,11 @@ class ProtocolBufferRepository(context: Context) {
 
     suspend fun updateValue(firstName: String, lastName: String, age: Int){
         dataStore.updateData { preference->
-            preference.toBuilder().setFirstName(firstName).setLastName(lastName).setAge(age).build()
+            preference.toBuilder()
+                .setFirstName(firstName)
+                .setLastName(lastName)
+                .setAge(age)
+                .build()
         }
     }
 

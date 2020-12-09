@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 class ProtocolBufferViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val repository = ProtocolBufferRepository(application)
+    private val repository = ProtocolBufferRepository(application.applicationContext)
 
     val protocolBufferData = repository.readProto.asLiveData()
 

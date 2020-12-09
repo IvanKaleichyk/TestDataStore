@@ -17,7 +17,7 @@ class ProtocolBufferActivity : AppCompatActivity() {
 
         btn.setOnClickListener {
             viewModel.updateValue(
-                edtLastName.text. toString(),
+                edtLastName.text.toString(),
                 edtName.text.toString(),
                 edtAge.text.toString().toInt()
             )
