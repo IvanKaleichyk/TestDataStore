@@ -1,8 +1,8 @@
 package com.youtubekoleychik.testdatastore
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.youtubekoleychik.testdatastore.forKeys.PreferencesActivity
 import com.youtubekoleychik.testdatastore.forProtoBuffers.ProtocolBufferActivity
 import kotlinx.android.synthetic.main.activity_main.*
